@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+/* 125% is 1.25, 1.25 = 20px/16px */
+/* 1rem is 20px */
+html{
+    font-size: 125%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    max-width:75rem ;
+}
+
+h1,h2{
+    font-family:'Poppins', sans-serif;
+}
+
+p{
+    font-family:'Open Sans', sans-serif ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 0.75rem;
+}
+
+.logo0{
+    width:55%;
+}
+
+.logo0 img{
+    max-width: 100%;
+}
+
+nav button{
+    background:#fff;
+    border-radius:20px;
+    border:1px solid rgb(248, 245, 245);
+    padding:0.5rem 0.25rem;
+    width:7.5rem;
+    box-shadow: 10px 10px 15px 8px rgba(159, 158, 158, 0.1)
+}
+
+header{
+    max-width:rem;
+    min-height:70vh;
+    margin:0 auto;
+    padding:3rem 3.5rem;
+    background-image:linear-gradient(rgba(210, 246, 246, 0.4),rgba(250, 242, 242, 0.75)),url(./images/bg-hero-desktop.svg);
+
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text{
+    margin:1.5rem 1rem;
+    max-width: 50%;
+}
+.text h1{
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.text p{
+    margin-bottom: 15px;
+    width:450px;
+}
+
+.text button{
+    background:hsl(322, 100%, 66%);
+    color:#fff;
+    border-radius:20px;
+    border:1px solid rgb(248, 245, 245);
+    padding:10px 15px;
+    width:10rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.icon{
+    max-width: 500px;
+}
+.icon img{
+    width: 100%;
+}
+
+.article{
+    margin:auto 100px;
+}
+
+.article p{
+    color:hsl(208, 11%, 55%);
+}
+
+.section_01,.section_02,.section_03{
+    max-width:95%;
+    border:white 1px solid;
+    margin:1.6rem 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px 8px rgba(159, 158, 158, 0.1);
+}
+
+.section_01{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 15rem;
+    margin-top: 6rem;
+}
+
+.section_01 .text_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:60%;
+    margin:0 1em;
+    padding:0 2.5em;
+}
+
+.text_box h2{
+    margin-bottom: 10px;
+}
+
+.people{
+    max-width:60%;
+    padding:20px 50px;
+}
+
+
+.people img{
+    max-width: 100%;
+    display: block;
+}
+
+.section_02{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 300px;
+}
+
+.section_02 .text_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:60%;
+    margin:0 1em;
+    padding:0 2.5em;
+}
+
+.section_03{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 300px;
+    margin-bottom: 200px;
+}
+
+.section_03 .text_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:60%;
+    margin:0 1em;
+    padding:0 2.5em;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    background:hsl(192, 100%, 9%);
+    min-height: 50vh;
+    padding:30px 30px;
+    color:#fff;
+}
+
+.location_txt{
+    display:flex;
+    width:350px;
+    margin-bottom: 15px;
+}
+
+.location_txt p{
+    margin-left: 15px;
+}
+
+.phone_no{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.phone_no p{
+    margin-left: 15px;
+}
+
+.email{
+    display: flex;
+}
+
+.email p{
+    margin-left: 15px;
+}
+
+.box_02{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+}
+
+.content_01 p{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.content_02 p{
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.footer p{
+    color:#fff;
+}
+
+@media(max-width:44em){
+    nav{
+        padding:0.25rem 0.25rem;
+    }
+    .content{
+        grid-template-columns: 1fr;
+        padding: 0 auto;
+    }
+
+    
+    header{
+        max-width: 50rem;
+        margin:0 auto;
+        padding: 2rem 1.5rem;
+    }
+    
+
+    .text{
+        max-width: 45%;
+        text-align: center;
+    }
+
+    .text button{
+        width:16rem;
+        padding: 10px 0px;
+        display:grid;
+        align-items: center;
+    }
+
+    .text h1{
+        width:400px;
+    }
+
+    .section_01{
+        grid-template-columns: 1fr;
+        padding: 30px 35px;
+    }
+
+    .section_02{
+        grid-template-columns: 1fr;
+        padding: 30px 35px;
+    }
+
+    .section_03{
+        grid-template-columns: 1fr;
+        padding: 30px 35px;
+    }
+
+    .footer{
+        grid-template-columns: 1fr;
+    }
+
+    .box_02{
+        grid-template-columns: 1fr;
+        margin-top: 35px;
+        margin-left: 0;
+    }
+    
+}
+
